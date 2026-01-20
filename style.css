@@ -390,6 +390,11 @@ body{
         display: block;
     }
 
+/* hero banner responsive */
+    .banner-mic-img {
+        top: 18%;
+        left: 28%;
+    }
     /* podcast responsive here*/
     #podcast{
     max-width: 100%;
@@ -434,7 +439,7 @@ body{
   }
 
   .icon {
-    font-size: 26px;
+    font-size: 1.6rem;
   }
 
 /* Episodes responsive here*/
@@ -447,7 +452,7 @@ body{
     grid-template-columns: 1fr;
   }
   .yt-card iframe {
-    height: 200px;
+    height: 12.5rem;
   }
   .card-heading {
     font-size: 1.25rem;
@@ -468,32 +473,32 @@ body{
   /* Footer responsive here*/
   .footer-img {
     height: auto;
-    padding: 36px 16px 80px;
+    padding: 2.5rem 1rem 5rem;
   }
 
   .footer-heading h2 {
-    font-size: 32px;
-    margin-bottom: 18px;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
   }
 
   .footer-links {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 14px 28px;
+    gap: 0.9rem 1.75rem;
     justify-content: center;
   }
 
   .footer-icons img {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
   }
 
   .footer-icons p {
-    font-size: 13px;
+    font-size: 0.9rem;
   }
 
   .copyright {
-    font-size: 11px;
+    font-size: 0.7rem;
   }
 
 }
@@ -513,11 +518,11 @@ body{
     /* podcast responsive */
     #podcast{
     max-width: 100%;
-    margin: 40px auto;
+    margin: 2.4rem auto;
 }
 
 .sub-description{
-    margin: 20px 30px;
+    margin: 1.25rem 1.9rem;
 }
 
 .number-statistics{
@@ -569,12 +574,10 @@ body{
     /* podcast responsive */
     #podcast{
     max-width: 100%;
-    margin: 40px auto;
+    margin: 2.5rem auto;
 }
 
 .sub-description{
-    margin: 20px 30px;
-}
-
-
+    margin: 1.25rem 1.9rem;
+    }
 }
