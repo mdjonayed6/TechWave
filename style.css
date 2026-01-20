@@ -12,7 +12,7 @@ body{
     color: white;
 }
 /* Shared Styles here */
-/* .btn-primary{
+.btn-primary{
     background: linear-gradient(48deg, #F7E93F, #FB09B4, #9100F8);
     color: #FFFFFF;
     font-size: 1rem;
@@ -20,4 +20,106 @@ body{
     line-height: 1.19rem;
     padding: 0.75rem 1rem;
     border-radius: 625rem;
-} */
+    cursor: pointer;
+}
+.btn-primary:hover{
+    transform: scale(1.05);
+}
+.sub-heading{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 3.63rem;
+}
+.sub-description{
+    color:#FFFFFF;
+    opacity: 0.8;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+/* Nav menu styles here */
+.heading-logo h2{
+    border: 0.06rem solid rgba(0, 0, 0, 1);
+    font-size: 1.9rem;
+}
+.gradient-text {
+    background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+    background-clip: text;
+    color: transparent;
+
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100rem;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 120%;
+}
+.menu>li>a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.menu>li>a:hover{
+    text-decoration:overline;
+    color: #F7E93F;
+}
+.hamburger{
+    display: none;
+}
+.divider{
+  border: none;
+  height: 0.15rem;
+  background-image: linear-gradient(to right, transparent, rgba(156, 39, 176, 0.2), transparent);
+  margin-top: 0.9rem;
+}
+
+
+
+/* Responsive Responsibility Resources */
+/* For Small Devices */
+@media screen and (max-width:576px) {
+    .container{
+    display: flex;
+    margin: 1rem 2rem;
+    }
+    .menu, .btn-primary{
+    display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+
+
+
+/* For medium Devices */
+@media screen and (min-width:576px) and (max-width:992px){
+    .container{
+    display: flex;
+    margin: 1rem 2rem;
+    }
+    .hamburger{
+        display: none;
+    }
+}
+/* For Large Devices */
+@media screen and (min-width:992px){
+    .container{
+    display: flex;
+    margin: 2rem auto;
+    }
+    .hamburger{
+        display: none;
+    }
+}
