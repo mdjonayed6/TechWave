@@ -54,7 +54,7 @@ body{
 }
 
 /* Nav menu styles here */
-.heading-logo h2{
+.footer-heading h2{
     font-size: 1.9rem;
 }
 .gradient-text {
@@ -249,6 +249,68 @@ body{
 
 }
 
+/* footer styles here */
+#footer {
+  position: relative;
+  margin-top: 7.5rem;
+}
+
+.footer-img {
+  position: relative;
+  background-image: url("./assets/footer-bg.png");
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.footer-heading{
+    font-size: 7rem;
+}
+.footer-heading h2 {
+  font-size: 66px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2.5rem;
+  margin: 1rem 0;
+  margin-bottom: 2.16rem;
+}
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-icons img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.footer-icons p {
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.6;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.19rem;
+}
+
+.copyright {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(250, 250, 250, 1);
+  line-height: 1.5rem;
+  opacity: 0.6;
+}
+
+
 /* for microphone */
 @keyframes bounce {
     0%   { transform: translateY(0); }
@@ -264,9 +326,9 @@ body{
     display: flex;
     margin: 1rem 2rem;
     }
-    .heading-logo h2{
+    .footer-heading h2{
     font-size: 1.2rem;
-}
+    }
     .menu, .btn-primary{
     display: none;
     }
@@ -274,7 +336,7 @@ body{
         display: block;
     }
 
-    /* podcast responsive */
+    /* podcast responsive here*/
     #podcast{
     max-width: 100%;
     margin: 40px auto;
@@ -294,12 +356,12 @@ body{
     margin-top: 3rem;
     gap: 2rem;
 }
-/* Episodes responsive */
+/* Episodes responsive here*/
 .sub-heading{
     font-size: 2rem;
     font-weight: 700;
     line-height: 2.44rem;
-}
+    }
 .yt-card-items {
     grid-template-columns: 1fr;
   }
@@ -320,6 +382,37 @@ body{
   }
   .icons{
     justify-content: center;
+  }
+
+  /* Footer responsive here*/
+  .footer-img {
+    height: auto;
+    padding: 36px 16px 80px;
+  }
+
+  .footer-heading h2 {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 14px 28px;
+    justify-content: center;
+  }
+
+  .footer-icons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer-icons p {
+    font-size: 13px;
+  }
+
+  .copyright {
+    font-size: 11px;
   }
 
 }
@@ -355,6 +448,8 @@ body{
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+
 /* For Large Devices */
 @media screen and (min-width:992px){
     .container{
