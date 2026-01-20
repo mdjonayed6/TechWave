@@ -166,7 +166,7 @@ body{
 }
 
  /* Episodes Styles Here */
-#episodes {
+#episodes, #host {
   margin-top: 7rem;
   padding: 0 1.5rem;
 }
@@ -215,6 +215,39 @@ body{
   color: #ffffff;
 }
 
+
+/* meet the host styles */
+.meet-the-host{
+    display: flex;
+    align-items: center;
+    background-color: #250D44;
+    padding: 2.5rem;
+    gap: 2rem;
+    border-radius: 2.5rem;
+}
+.host-heading{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.44rem;
+    margin-bottom: 1rem;
+}
+.host-description{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    opacity: 0.6;
+}
+.icons{
+    display: flex;
+    gap: 0.75rem;
+}
+.icons img{
+    border-radius: 50%;
+    border: 0.06rem solid rgba(83, 60, 114, 1);
+    padding: 1rem;
+
+}
 
 /* for microphone */
 @keyframes bounce {
@@ -278,6 +311,15 @@ body{
   }
   .card-description {
     font-size: 0.95rem;
+  }
+
+  /* Meet the host responsive */
+  .meet-the-host{
+    flex-direction: column;
+    text-align: center;
+  }
+  .icons{
+    justify-content: center;
   }
 
 }
