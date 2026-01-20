@@ -22,14 +22,27 @@ body{
     border-radius: 625rem;
     cursor: pointer;
 }
-.btn-primary:hover{
+.btn-primary:hover, .btn-message:hover{
     transform: scale(1.05);
+}
+.btn-message{
+    background-color: #0b0420;
+    color: #00FF9D;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.19rem;
+    padding: 0.75rem 1rem;
+    box-sizing: border-box;
+    border: 1px solid #00FF9D;
+    border-radius: 625rem;
+    cursor: pointer;
 }
 .sub-heading{
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
     line-height: 3.63rem;
+    margin-bottom: 1rem;
 }
 .sub-description{
     color:#FFFFFF;
@@ -37,11 +50,11 @@ body{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.25rem;
+    text-align: center;
 }
 
 /* Nav menu styles here */
 .heading-logo h2{
-    border: 0.06rem solid rgba(0, 0, 0, 1);
     font-size: 1.9rem;
 }
 .gradient-text {
@@ -84,6 +97,85 @@ body{
   margin-top: 0.9rem;
 }
 
+/* Hero banner styles here */
+.hero-container{
+    min-height: 100vh;
+}
+.banner-wave-img{
+    background: url("./assets/hero-bg.png");
+    height: 80vh;
+    background-size: cover;    
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.banner-circle-img{
+    background: url("./assets/hero-circle.png");
+    height: 70vh;
+    z-index: 10;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 18rem;
+    height: 18rem;
+}
+.banner-mic-img{
+    position: relative;
+    top: 18%;
+    left: 28%;
+    animation: bounce 3s ease-out infinite;
+}
+.new-badge{
+    position: absolute;
+    top: -2.2rem;
+    right: 4.8rem;
+    background-color: #00FF9D;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    line-height: 1.38rem;
+    border-radius: 62.5rem;
+}
+
+/* hero banner styles */
+.banner-text-content{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+.banner-btn{
+    text-align: center;
+    justify-content: center;
+}
+.banner-text-content h1{
+    font-size: 4rem;
+    margin-top: 10rem;
+}
+
+/* Podcast styles */
+#podcast{
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.number-statistics{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 7rem;
+    gap: 3rem;
+}
+/* for microphone */
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
 
 
 /* Responsive Responsibility Resources */
@@ -93,12 +185,36 @@ body{
     display: flex;
     margin: 1rem 2rem;
     }
+    .heading-logo h2{
+    font-size: 1.2rem;
+}
     .menu, .btn-primary{
     display: none;
     }
     .hamburger{
         display: block;
     }
+
+    /* podcast responsive */
+    #podcast{
+    max-width: 100%;
+    margin: 40px auto;
+}
+.sub-heading{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.44rem;
+}
+.sub-description{
+    margin: 10px 30px;
+}
+
+.number-statistics{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3rem;
+    gap: 2rem;
+}
 }
 
 
