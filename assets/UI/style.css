@@ -166,7 +166,7 @@ body{
 }
 
  /* Episodes Styles Here */
-#episodes, #host, #why-choose {
+#episodes, #host {
   margin-top: 7rem;
   padding: 0 1.5rem;
 }
@@ -216,59 +216,7 @@ body{
 }
 
 /* Why Choose TechWave Styles here */
-.why{
-    margin-bottom: 3rem;
-}
-.grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 1.4rem;
-  }
 
-  .card {
-    background: #1e0b45;
-    padding: 30px;
-    border-radius: 20px;
-    justify-content: center;
-    padding: 2.5rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .tall   { 
-    grid-column: span 2; 
-    grid-row: span 2; 
-    }
-
-  .wide   { 
-    grid-column: span 4;
-    }           
-  .bottom { 
-    grid-column: span 4; 
-    } 
-  .small  { 
-    grid-column: span 2; 
-    } 
-
-  .choose-heading { 
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 1rem 0;
-    line-height: 1.81rem;
-   }
-
-  .choose-description { 
-    color: #FFFFFF; 
-    line-height: 1.5;
-    opacity: 0.6; 
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5rem;
-    }
-
-  .icon { 
-    font-size: 30px; 
-    }
 
 /* meet the host styles */
 .meet-the-host{
@@ -410,33 +358,6 @@ body{
     margin-top: 3rem;
     gap: 2rem;
 }
-
-/* Why choose us responsive */
-.grid {
-    grid-template-columns: 1fr;
-  }
-  .tall, .wide, .bottom, .small {
-    grid-column: span 1;
-    grid-row: auto;
-  }
-
-  .card {
-    padding: 1.6rem;
-  }
-
-  .choose-heading {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-  }
-
-  .choose-description {
-    font-size: 0.95rem;
-  }
-
-  .icon {
-    font-size: 26px;
-  }
-
 /* Episodes responsive here*/
 .sub-heading{
     font-size: 2rem;
@@ -524,31 +445,6 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-/* why choose responsive */
-.grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .tall {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-
-  .wide, .bottom {
-    grid-column: span 4;
-  }
-
-  .small {
-    grid-column: span 2;
-  }
-
-  .choose-heading {
-    font-size: 1.3rem;
-  }
-
-  .card {
-    padding: 2rem;
-  }
 /* episodes responsive */
 .yt-card-items {
     grid-template-columns: repeat(2, 1fr);
@@ -575,6 +471,5 @@ body{
 .sub-description{
     margin: 20px 30px;
 }
-
 
 }
